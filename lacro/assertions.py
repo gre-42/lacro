@@ -145,6 +145,7 @@ def lists_assert_disjoint(lsts, msg=''):
     from lacro.collections import list_duplicates
     from lacro.iterators import iterables_concat
     from lacro.string.misc import iterable_2_str, to_str
+
     # rewinding iterator
     lsts = list(lsts)
     err = list_duplicates(iterables_concat(lsts))
@@ -199,6 +200,7 @@ def set_assert_subset(sett, subset, delimiter=', ', max_len=200, msg='',
                       unique=True):
     from lacro.iterators import iterable_ids_of_unique
     from lacro.string.misc import iterable_2_repr, trunc
+
     # nex = set(subset) - set(sett)
     sett = list(sett)
     if unique:

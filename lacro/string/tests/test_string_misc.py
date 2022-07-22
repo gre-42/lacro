@@ -7,11 +7,11 @@ import pytest
 
 from lacro.inspext.app import init_pytest_suite
 from lacro.string.misc import (F0, FF, _newline_join, box_chars_1,
-                                checked_getenv, clean_using_dictionary,
-                                colored_words, exp_latex, hyphenation,
-                                hyphenation_cat, mywrap, opt_if_nonnull,
-                                replace_all, text_sliding_window, textbox,
-                                textline, to_repr, unique_substrings)
+                               checked_getenv, clean_using_dictionary,
+                               colored_words, exp_latex, hyphenation,
+                               hyphenation_cat, mywrap, opt_if_nonnull,
+                               replace_all, text_sliding_window, textbox,
+                               textline, to_repr, unique_substrings)
 
 init_pytest_suite()
 

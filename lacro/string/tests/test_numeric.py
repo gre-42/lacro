@@ -6,9 +6,9 @@ from simpleeval import FeatureNotAvailable
 
 from lacro.inspext.app import init_pytest_suite
 from lacro.string.numeric import (align_decimal, fcalculate,
-                                   float_string_order_key, g_maxnum_2_str,
-                                   i_maxnum_2_str, icalculate,
-                                   int_string_order_key, shorten_float_str)
+                                  float_string_order_key, g_maxnum_2_str,
+                                  i_maxnum_2_str, icalculate,
+                                  int_string_order_key, shorten_float_str)
 
 init_pytest_suite()
 

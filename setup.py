@@ -17,6 +17,7 @@ install_requires = [
 ]
 
 extras_require = {
+    'gui': ['ncurses']
 }
 
 setup_requires = [

@@ -5,9 +5,8 @@ from collections import OrderedDict
 from typing import Iterable, Union
 
 from lacro.assertions import (asserted_of_type, dict_assert_function,
-                               list_assert_no_duplicates,
-                               lists_assert_disjoint, set_assert_contains,
-                               set_assert_subset)
+                              list_assert_no_duplicates, lists_assert_disjoint,
+                              set_assert_contains, set_assert_subset)
 
 from ._items import items_2_str
 from ._lists import list_intersect
@@ -51,6 +50,7 @@ def dict_2_str(d, **kwargs):
 
 def dict_get(d, k, msg='', sep='\n', order=True):
     from lacro.string.misc import iterable_2_repr
+
     # if "d" is a string and "k" is a substring inside that string,
     # then "k not in d == False", but d[k] returns a TypeError
     if type(d) == str:

@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 from typing import Dict, Hashable, List, Sequence, Type, Union
 
 from lacro.collections import (HashableOrderedDict, dict_minus, items_2_str,
-                                list_minus)
+                               list_minus)
 from lacro.iterators import eqzip
 
 from .._elements.column_descriptor import (ColumnDescriptor, UnknownType,

@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from lacro.string.textbox import *
+
 se.init_pytest_suite()
 
 

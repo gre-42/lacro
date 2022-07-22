@@ -5,8 +5,8 @@ import numpy as np
 import pytest
 
 from lacro.collections.listdict._elements.values import (NullComparable,
-                                                          float_null,
-                                                          string_null)
+                                                         float_null,
+                                                         string_null)
 from lacro.inspext.app import init_pytest_suite
 
 init_pytest_suite()

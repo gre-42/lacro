@@ -7,7 +7,7 @@ from os import unlink
 import pytest
 
 from lacro.collections.dictlike_tuples import (dictlike_tuple,
-                                                named_dictlike_tuple)
+                                               named_dictlike_tuple)
 from lacro.inspext.app import init_pytest_suite
 from lacro.io.string import load_from_pickle, save_to_pickle
 from lacro.string.misc import to_str

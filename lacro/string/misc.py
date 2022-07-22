@@ -7,8 +7,8 @@ from collections import OrderedDict
 from typing import Dict, Iterable
 
 from lacro.assertions import (asserted_of_type, dict_assert_function,
-                               dict_assert_inverse_surjective,
-                               set_assert_contains)
+                              dict_assert_inverse_surjective,
+                              set_assert_contains)
 from lacro.decorators import ignore_unknown_arguments
 from lacro.string.numeric import shorten_float_str
 
@@ -89,8 +89,8 @@ def to_str(v, **kwargs):
              float_fmt=None, shorten=False):
         import numpy as np
 
-        from lacro.stdext import (GetattrHashableOrderedDict, HashableOrderedDict,
-                                   dict_2_str)
+        from lacro.stdext import (GetattrHashableOrderedDict,
+                                  HashableOrderedDict, dict_2_str)
 
         def tos(vv):
             return to_str(vv, **kwargs)

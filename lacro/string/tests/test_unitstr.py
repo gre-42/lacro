@@ -8,7 +8,7 @@ import numpy as np
 from lacro.inspext.app import init_pytest_suite
 from lacro.path.pathabs import abspath_sl
 from lacro.string.unitstr import (UnitFormatted, float_2_str_signif,
-                                   precision_for_length, unit_formatter)
+                                  precision_for_length, unit_formatter)
 
 init_pytest_suite()
 

@@ -6,13 +6,13 @@ from collections import OrderedDict
 import numpy as np
 
 from lacro.assertions import (asserted_of_type, lists_assert_disjoint,
-                               lists_assert_equal, set_assert_subset)
+                              lists_assert_equal, set_assert_subset)
 from lacro.collections import (Dict2Object, HashableOrderedDict,
-                                dict_intersect, dict_union, dict_unite,
-                                dict_updated, list_minus, lists_concat)
+                               dict_intersect, dict_union, dict_unite,
+                               dict_updated, list_minus, lists_concat)
 from lacro.iterators import eqzip
 from lacro.statistics.linmodel.covariate import (Level, LevelAnd,
-                                                  LevelCombinations, LevelSum)
+                                                 LevelCombinations, LevelSum)
 from lacro.statistics.linmodel.covmath import simplify
 
 from ._collections.multiple import join as mjoin

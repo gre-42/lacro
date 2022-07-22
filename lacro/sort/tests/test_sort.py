@@ -7,8 +7,8 @@ from numpy.testing import assert_allclose, assert_array_equal
 from lacro.inspext.app import init_pytest_suite
 from lacro.iterators import eqzip
 from lacro.sort.array import (iter_argmin, map_maxsim_rowsX_to_rowsY,
-                               searchunsorted, sort_rowsY_like_rowsX,
-                               unique_2d, unique_diff)
+                              searchunsorted, sort_rowsY_like_rowsX, unique_2d,
+                              unique_diff)
 
 init_pytest_suite()
 

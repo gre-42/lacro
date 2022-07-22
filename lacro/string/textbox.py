@@ -2,7 +2,8 @@
 import curses
 from curses import textpad
 
-import lacro.stdext as se
+from lacro.iterators import last_element
+from lacro.string.misc import added_line_numbers
 
 
 class Contents:
@@ -15,7 +16,7 @@ class Contents:
         return x + sum(len(l) + 1 for i, l in enumerate(self.text.split('\n')) if i < y)
 
     def i_2_yx(self, i):
-        y, x = se.last_element((y, len(l)) for y, l in enumerate(self.text[:i].split('\n')))
+        y, x = last_element((y, len(l)) for y, l in enumerate(self.text[:i].split('\n')))
         return y, x
 
     def insert(self, y, x, char):
@@ -139,7 +140,7 @@ class InsertingTextbox:
                 return None
             if self.verbose:
                 self.debugwin.clear()
-                fill_window(self.debugwin, 'x0 %d y0 %d x %d y %d\n' % (x0, y0, x, y) + se.added_line_numbers(self.contents.text))
+                fill_window(self.debugwin, 'x0 %d y0 %d x %d y %d\n' % (x0, y0, x, y) + added_line_numbers(self.contents.text))
 
             self.window.clear()
             fill_window(self.window, self.contents.text)

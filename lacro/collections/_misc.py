@@ -7,7 +7,7 @@ from collections import OrderedDict
 from contextlib import contextmanager
 
 from lacro.assertions import (list_assert_disjoint, set_assert_contains,
-                               set_assert_subset)
+                              set_assert_subset)
 
 
 class Func2List:

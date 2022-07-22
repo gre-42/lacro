@@ -36,6 +36,7 @@ def tuple_allclose(a, b, maxrec=5):
         import numpy as np
 
         from lacro.math.npext import float_types, int_types
+
         # noinspection PyUnresolvedReferences
         c = np.result_type(type(a), type(b)).type
         if c in int_types + [np.str_]:

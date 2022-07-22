@@ -2,9 +2,8 @@
 from collections import Counter
 from functools import reduce
 
-from lacro.assertions import (list_assert_no_duplicates,
-                               lists_assert_disjoint, set_assert_contains,
-                               set_assert_subset)
+from lacro.assertions import (list_assert_no_duplicates, lists_assert_disjoint,
+                              set_assert_contains, set_assert_subset)
 
 
 def list_sorted(keys, head_keys, tail_keys, order='increasing'):

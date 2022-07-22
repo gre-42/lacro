@@ -13,31 +13,30 @@ import numpy as np
 
 import lacro.math.npext as ne
 from lacro.array import (array_of_shape, array_torepr, array_totuple,
-                          asserted_shape, default_concatenate,
-                          mask_negated_indices, repeatE)
+                         asserted_shape, default_concatenate,
+                         mask_negated_indices, repeatE)
 from lacro.assertions import (asserted_is_type, asserted_of_type,
-                               dict_assert_injective, list_assert_disjoint,
-                               list_assert_no_duplicates,
-                               lists_assert_disjoint, lists_assert_equal,
-                               set_assert_subset)
+                              dict_assert_injective, list_assert_disjoint,
+                              list_assert_no_duplicates, lists_assert_disjoint,
+                              lists_assert_equal, set_assert_subset)
 from lacro.collections import (GetattrHashableOrderedDict, HashableDict,
-                                HashableOrderedDict, array_ids_join, dict_get,
-                                dict_intersect, dict_union, dict_unique_value,
-                                dict_unite, dict_update, items_2_str,
-                                items_unique, list_intersect, list_minus,
-                                list_sorted, list_union, lists_concat, maxdef)
+                               HashableOrderedDict, array_ids_join, dict_get,
+                               dict_intersect, dict_union, dict_unique_value,
+                               dict_unite, dict_update, items_2_str,
+                               items_unique, list_intersect, list_minus,
+                               list_sorted, list_union, lists_concat, maxdef)
 from lacro.decorators import indexable_function
 from lacro.inspext.misc import reraise
 from lacro.io.string import filtered_open, open_chmod, print_err
 from lacro.iterators import (eqzip, eqziplist, iterable_ids_of_change,
-                              iterable_ids_of_unique, iterable_ordered_group,
-                              iterables_concat, single_element, unique_value)
+                             iterable_ids_of_unique, iterable_ordered_group,
+                             iterables_concat, single_element, unique_value)
 from lacro.path.pathver import versioned_file
 from lacro.sort import argsort
 from lacro.string.misc import (XhtmlText, class_attr, escape_latex,
-                                is_normal_key, iterable_2_repr,
-                                keys_intersect_re_keys, re_keys_2_keys,
-                                to_repr, to_str, to_strp)
+                               is_normal_key, iterable_2_repr,
+                               keys_intersect_re_keys, re_keys_2_keys, to_repr,
+                               to_str, to_strp)
 from lacro.string.misc import trunc as strunc
 from lacro.typing import SizedIterable
 
@@ -2046,7 +2045,7 @@ class ListDict:
                                                for k in self.keys()))
 
     def to_series(self, key):
-        from pandas import Series, Categorical
+        from pandas import Categorical, Series
         if is_subset_of_type(self.dspecs[key].ttype):
             return Series(Categorical(self[key],
                                       categories=list(self.dspecs[key].ttype),

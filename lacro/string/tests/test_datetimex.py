@@ -5,7 +5,7 @@ import pytest
 
 from lacro.inspext.app import init_pytest_suite
 from lacro.string.datetimex import (date_format, datetime_format,
-                                     datetime_from_string)
+                                    datetime_from_string)
 
 init_pytest_suite()
 

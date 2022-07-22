@@ -10,11 +10,11 @@ from typing import Callable, cast
 import pytest
 
 from lacro.collections import (AppendAndIterate, Cache, CompressedCache,
-                                CompressedDict, Dict2Object, FunctionChain,
-                                GetattrHashableOrderedDict, Incrementer,
-                                IterateGet, ListKeysView, array_ids_join,
-                                filter_exclude, filter_include, list_sorted,
-                                re_inc_exc, sync_tee)
+                               CompressedDict, Dict2Object, FunctionChain,
+                               GetattrHashableOrderedDict, Incrementer,
+                               IterateGet, ListKeysView, array_ids_join,
+                               filter_exclude, filter_include, list_sorted,
+                               re_inc_exc, sync_tee)
 from lacro.collections._cache import tuple_allclose, tuple_types_torepr
 from lacro.inspext.app import init_pytest_suite
 from lacro.io.string import load_from_pickle, save_to_pickle
